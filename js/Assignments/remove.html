@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>remove</title>
+</head>
+<body>
+    
+    window.onload = function ()
+    {   
+        var select = document.getElementById('selectBox');
+        var delButton = document.getElementById('delete');
+    
+        function remove()
+        {
+            value = select.selectedIndex;
+            select.removeChild(select[value]);
+        }
+    
+        delButton.onclick = remove;    
+    }
+    To add the item I would create second select box and:
+    
+    var select2 = document.getElementById('selectBox2');
+    var addSelect = document.getElementById('addSelect');
+    
+    function add()
+    {
+        value1 = select2.selectedIndex;
+        select.appendChild(select2[value1]);    
+    }
+    
+    addSelect.onclick = add;  
+</body>
+</html>
+
+
+
+

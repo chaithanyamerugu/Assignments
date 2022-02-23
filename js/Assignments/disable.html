@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>disable-enable of content</title>
+    <script type="text/javascript">
+        function makeDisable(){
+            var x=document.getElementById("mySelect")
+            x.disabled=true
+        }
+        function makeEnable(){
+            var x=document.getElementById("mySelect")
+            x.disabled=false
+        }
+        </script>
+</head>
+<body>
+    <body>
+        <form>
+        <select id="mySelect">
+          <option>Apple</option>
+          <option>Banana</option>
+          <option>Orange</option>
+        </select>
+        <input type="button" onclick="makeDisable()" value="Disable list">
+        <input type="button" onclick="makeEnable()" value="Enable list">
+        </form>
+        </body>
+</body>
+</html>
+
+
+
+
+
+
+
